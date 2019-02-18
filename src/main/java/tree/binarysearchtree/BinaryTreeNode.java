@@ -25,4 +25,12 @@ public class BinaryTreeNode {
             return this.left;
         }
     }
+
+    public BinaryTreeNode getBrother(){
+        if(this == parent.left){
+            return parent.right;
+        } else {
+            return parent.left;
+        }
+    }
 }

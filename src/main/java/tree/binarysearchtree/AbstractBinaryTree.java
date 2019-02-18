@@ -1,11 +1,11 @@
 package tree.binarysearchtree;
 
+import tree.redblacktree.RedBlackBinaryTreeNode;
+
 /**
  * @author ybbai
  */
 public abstract class AbstractBinaryTree {
-    public BinaryTreeNode root;
-
 
     /**
      * insert node
@@ -27,7 +27,7 @@ public abstract class AbstractBinaryTree {
      * Depth first traversal  *
      **************************/
 
-    public final void preOrderTraversalRecursive(BinaryTreeNode root){
+    public void preOrderTraversalRecursive(BinaryTreeNode root){
         if(root != null){
 
             System.out.print(root.value);
@@ -41,7 +41,7 @@ public abstract class AbstractBinaryTree {
         }
     }
 
-    public final void inOrderTraversalRecursive(BinaryTreeNode root){
+    public void inOrderTraversalRecursive(BinaryTreeNode root){
         if(root != null){
             if(root.left != null){
                 inOrderTraversalRecursive(root.left);
@@ -55,7 +55,7 @@ public abstract class AbstractBinaryTree {
         }
     }
 
-    public final void postOrderTraversalRecursive(BinaryTreeNode root){
+    public void postOrderTraversalRecursive(BinaryTreeNode root){
         if(root != null){
             if(root.left != null){
                 postOrderTraversalRecursive(root.left);
@@ -72,7 +72,7 @@ public abstract class AbstractBinaryTree {
      * Width first traversal  *
      **************************/
 
-    public final void layerTraversal(BinaryTreeNode root){
+    public void layerTraversal(BinaryTreeNode root){
 
     }
 }
